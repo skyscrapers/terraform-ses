@@ -4,4 +4,5 @@ variable "domain" {
 
 variable "zone_id" {
   description = "Route 53 zone ID for the SES domain verification"
+  default     = ""
 }
