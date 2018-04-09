@@ -4,7 +4,7 @@ resource "aws_route53_record" "domain_amazonses_verification_record" {
   name    = "_amazonses.${var.domain}"
   type    = "TXT"
   ttl     = "3600"
-  records = ["${aws_ses_domain_identity.domain.verification_token}"]
+  records = ["${aws_ses_domain_identity.domain.verification_token}", "${var.ses_records}"]
 }
 
 resource "aws_route53_record" "domain_amazonses_dkim_record" {

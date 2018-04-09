@@ -12,3 +12,8 @@ variable "dkim_records" {
   type        = "map"
   default     = {}
 }
+
+variable "ses_records" {
+  description = "Additional entries which are added to the _amazonses record"
+  default = []
+}
