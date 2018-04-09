@@ -14,6 +14,6 @@ variable "dkim_records" {
 }
 
 variable "ses_records" {
-  description = "Additionals entries which are added to the _amazonses record"
+  description = "Additional entries which are added to the _amazonses record"
   default = []
 }
