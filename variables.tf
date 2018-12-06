@@ -7,12 +7,6 @@ variable "zone_id" {
   default     = ""
 }
 
-variable "dkim_records" {
-  description = "Amazon SES DKIM records to add to R53"
-  type        = "map"
-  default     = {}
-}
-
 variable "ses_records" {
   description = "Additional entries which are added to the _amazonses record"
   default = []
